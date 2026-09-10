@@ -12,6 +12,9 @@ pub use crate::confchange::{
 };
 pub use crate::confstate::conf_state_eq;
 pub use crate::protos::eraftpb;
+/// The rust-protobuf runtime the generated `eraftpb` types implement, so a
+/// crate that encodes them names one `protobuf` major: this crate's.
+pub use protobuf;
 
 #[allow(dead_code)]
 #[allow(unknown_lints)]
