@@ -507,6 +507,7 @@ mod config;
 mod errors;
 mod log_unstable;
 mod quorum;
+/// The Raft state machine: `Raft` and its election, replication and read-index logic.
 #[cfg(test)]
 pub mod raft;
 #[cfg(not(test))]
